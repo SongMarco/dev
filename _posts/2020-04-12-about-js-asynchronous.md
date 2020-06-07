@@ -3,7 +3,7 @@ title: 자바스크립트의 비동기 처리 방식에 대한 고찰
 toc: false
 layout: post
 description: 자바스크립트의 비동기 처리 방법에 대해 설명해보았다.
-categories: [markdown]
+categories: [javascript, backend-issue]
 ---
 
 ### 들어가며

@@ -3,7 +3,7 @@ title: DB 데이터를 변경할 때 사용하는 보험들 (UPDATE, DELETE)
 toc: false
 layout: post
 description: DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다.
-categories: [markdown]
+categories: [backend-issue]
 ---
 ![schema]({{ site.baseurl }}/images/fail-db.jpg)
 
