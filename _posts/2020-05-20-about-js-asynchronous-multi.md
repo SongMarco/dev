@@ -8,7 +8,7 @@ categories: [markdown]
 ## 자바스크립트의 비동기 동작에 대해 - 2 : 반복적인 비동기 동작 처리하기
 
 자바스크립트에서 비동기 처리를 위해 자주 사용하는 방법은 3가지가 있으며, 자세한 개념 설명은 간단한 gif 이미지와, 아래의 링크로 대체한다. 
-![sync_all](media/async_await.gif)
+![sync_all](images/async_await.gif)
 
 ### 자바스크립트의 비동기 처리 방법
 
@@ -70,7 +70,7 @@ let main = async () => {
 ```
 
 #### 코드 실행 결과. 앞선 작업이 끝나야 다음 작업이 수행된다... (답답)
-![work_sync](media/sync_work.gif)
+![work_sync](images/sync_work.gif)
 
 ## 코드 예제 - Promise.all
 따라서 반복문이 병렬로 처리될 수 있도록 추가적인 조치가 필요해진다. 여러 방법이 있지만, 나의 경우 map과 Promise.all()의 조합이 코드 양이 적어서 주로 활용하는 편이다.
@@ -87,7 +87,7 @@ console.log('모든 작업이 끝났습니다.');
 
 #### 코드 실행 결과. 
 #### 앞의 for문을 사용한 케이스와 비교했을 때 훨씬 빠르게 작업이 끝난다. (편안)
-![work_async](media/work_async.gif)
+![work_async](images/work_async.gif)
 
 이외에도 가능한 여러 조합이 있다.
 - foreach 와 Array.push, Promise.all 조합 등등...
