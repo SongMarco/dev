@@ -1,8 +1,8 @@
 ---
-title: [Javascript] async/await 과 Promise.all로 비동기 처리하기
+title: Javascript async/await 과 Promise.all로 비동기 처리하기
 toc: false
 layout: post
-description: 개발 블로그 출사표
+description: 자바스크립트에서 발생하는 반복적인 비동기 동작에 대해 다루어본다.
 categories: [markdown]
 ---
 ## 자바스크립트의 비동기 동작에 대해 - 2 : 반복적인 비동기 동작 처리하기
