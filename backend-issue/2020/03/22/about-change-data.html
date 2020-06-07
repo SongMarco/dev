@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다." />
 <meta property="og:description" content="DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다." />
-<link rel="canonical" href="https://songmarco.github.io/dev/markdown/2020/03/22/about-change-data.html" />
-<meta property="og:url" content="https://songmarco.github.io/dev/markdown/2020/03/22/about-change-data.html" />
+<link rel="canonical" href="https://songmarco.github.io/dev/backend-issue/2020/03/22/about-change-data.html" />
+<meta property="og:url" content="https://songmarco.github.io/dev/backend-issue/2020/03/22/about-change-data.html" />
 <meta property="og:site_name" content="마르코의 블로그" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-22T00:00:00-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://songmarco.github.io/dev/markdown/2020/03/22/about-change-data.html"},"description":"DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다.","@type":"BlogPosting","url":"https://songmarco.github.io/dev/markdown/2020/03/22/about-change-data.html","headline":"DB 데이터를 변경할 때 사용하는 보험들 (UPDATE, DELETE)","dateModified":"2020-03-22T00:00:00-05:00","datePublished":"2020-03-22T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://songmarco.github.io/dev/backend-issue/2020/03/22/about-change-data.html"},"description":"DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다.","@type":"BlogPosting","url":"https://songmarco.github.io/dev/backend-issue/2020/03/22/about-change-data.html","headline":"DB 데이터를 변경할 때 사용하는 보험들 (UPDATE, DELETE)","dateModified":"2020-03-22T00:00:00-05:00","datePublished":"2020-03-22T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/dev/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://songmarco.github.io/dev/feed.xml" title="마르코의 블로그" /><link rel="shortcut icon" type="image/x-icon" href="/dev/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>DB 데이터를 변경할 때 사용하는 보험들 (UPDATE, DELETE) | 마르코의 블로그</title>
@@ -24,13 +24,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다." />
 <meta property="og:description" content="DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다." />
-<link rel="canonical" href="https://songmarco.github.io/dev/markdown/2020/03/22/about-change-data.html" />
-<meta property="og:url" content="https://songmarco.github.io/dev/markdown/2020/03/22/about-change-data.html" />
+<link rel="canonical" href="https://songmarco.github.io/dev/backend-issue/2020/03/22/about-change-data.html" />
+<meta property="og:url" content="https://songmarco.github.io/dev/backend-issue/2020/03/22/about-change-data.html" />
 <meta property="og:site_name" content="마르코의 블로그" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-22T00:00:00-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://songmarco.github.io/dev/markdown/2020/03/22/about-change-data.html"},"description":"DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다.","@type":"BlogPosting","url":"https://songmarco.github.io/dev/markdown/2020/03/22/about-change-data.html","headline":"DB 데이터를 변경할 때 사용하는 보험들 (UPDATE, DELETE)","dateModified":"2020-03-22T00:00:00-05:00","datePublished":"2020-03-22T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://songmarco.github.io/dev/backend-issue/2020/03/22/about-change-data.html"},"description":"DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다.","@type":"BlogPosting","url":"https://songmarco.github.io/dev/backend-issue/2020/03/22/about-change-data.html","headline":"DB 데이터를 변경할 때 사용하는 보험들 (UPDATE, DELETE)","dateModified":"2020-03-22T00:00:00-05:00","datePublished":"2020-03-22T00:00:00-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -77,7 +77,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/dev/about/">About</a><a class="page-link" href="/dev/search/">Search</a><a class="page-link" href="/dev/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/dev/about/">About</a><a class="page-link" href="/dev/categories/">Tags</a><a class="page-link" href="/dev/search/">Search</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -98,7 +98,7 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/dev/categories/#markdown">markdown</a>
+        <a class="category-tags-link" href="/dev/categories/#backend-issue">backend-issue</a>
         
       
       </p>
@@ -143,7 +143,7 @@ window.onload = wrap_img;
 
 <p>지금까지 DB 데이터를 안전하게 변경하는 방법에 대해서 알아보았다. 백업과 트랜잭션을 사용하는 방법에 대한 내용은 다음 글에서 다룰 예정이다.</p>
 
-  </div><a class="u-url" href="/dev/markdown/2020/03/22/about-change-data.html" hidden></a>
+  </div><a class="u-url" href="/dev/backend-issue/2020/03/22/about-change-data.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
