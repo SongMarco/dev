@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>스키마란 무엇인가 | fastpages</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="스키마란 무엇인가" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="최근 백엔드 작업을 하다가, “JSON 스키마”를 처음 접했다. 스키마? 데이터의 구조로 알고 있는데… 데이터베이스에서나 쓰던 개념 아니야? JSON에 무슨 스키마가 있다는 거지? 라는 질문에서 스키마에 대해서 잘 모르는 것이 많다는 생각이 들어서, 용어에 대한 정의부터 출발해 스키마가 실제로 어떻게 쓰이고 있는지에 대하여 고민해보았다." />
+<meta property="og:description" content="최근 백엔드 작업을 하다가, “JSON 스키마”를 처음 접했다. 스키마? 데이터의 구조로 알고 있는데… 데이터베이스에서나 쓰던 개념 아니야? JSON에 무슨 스키마가 있다는 거지? 라는 질문에서 스키마에 대해서 잘 모르는 것이 많다는 생각이 들어서, 용어에 대한 정의부터 출발해 스키마가 실제로 어떻게 쓰이고 있는지에 대하여 고민해보았다." />
+<link rel="canonical" href="https://songmarco.github.io/dev/markdown/2020/03/08/about-schema.html" />
+<meta property="og:url" content="https://songmarco.github.io/dev/markdown/2020/03/08/about-schema.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-08T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"최근 백엔드 작업을 하다가, “JSON 스키마”를 처음 접했다. 스키마? 데이터의 구조로 알고 있는데… 데이터베이스에서나 쓰던 개념 아니야? JSON에 무슨 스키마가 있다는 거지? 라는 질문에서 스키마에 대해서 잘 모르는 것이 많다는 생각이 들어서, 용어에 대한 정의부터 출발해 스키마가 실제로 어떻게 쓰이고 있는지에 대하여 고민해보았다.","@type":"BlogPosting","headline":"스키마란 무엇인가","dateModified":"2020-03-08T00:00:00-06:00","datePublished":"2020-03-08T00:00:00-06:00","url":"https://songmarco.github.io/dev/markdown/2020/03/08/about-schema.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://songmarco.github.io/dev/markdown/2020/03/08/about-schema.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/dev/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://songmarco.github.io/dev/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/dev/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>스키마란 무엇인가 | fastpages</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="스키마란 무엇인가" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="최근 백엔드 작업을 하다가, “JSON 스키마”를 처음 접했다. 스키마? 데이터의 구조로 알고 있는데… 데이터베이스에서나 쓰던 개념 아니야? JSON에 무슨 스키마가 있다는 거지? 라는 질문에서 스키마에 대해서 잘 모르는 것이 많다는 생각이 들어서, 용어에 대한 정의부터 출발해 스키마가 실제로 어떻게 쓰이고 있는지에 대하여 고민해보았다." />
+<meta property="og:description" content="최근 백엔드 작업을 하다가, “JSON 스키마”를 처음 접했다. 스키마? 데이터의 구조로 알고 있는데… 데이터베이스에서나 쓰던 개념 아니야? JSON에 무슨 스키마가 있다는 거지? 라는 질문에서 스키마에 대해서 잘 모르는 것이 많다는 생각이 들어서, 용어에 대한 정의부터 출발해 스키마가 실제로 어떻게 쓰이고 있는지에 대하여 고민해보았다." />
+<link rel="canonical" href="https://songmarco.github.io/dev/markdown/2020/03/08/about-schema.html" />
+<meta property="og:url" content="https://songmarco.github.io/dev/markdown/2020/03/08/about-schema.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-08T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"최근 백엔드 작업을 하다가, “JSON 스키마”를 처음 접했다. 스키마? 데이터의 구조로 알고 있는데… 데이터베이스에서나 쓰던 개념 아니야? JSON에 무슨 스키마가 있다는 거지? 라는 질문에서 스키마에 대해서 잘 모르는 것이 많다는 생각이 들어서, 용어에 대한 정의부터 출발해 스키마가 실제로 어떻게 쓰이고 있는지에 대하여 고민해보았다.","@type":"BlogPosting","headline":"스키마란 무엇인가","dateModified":"2020-03-08T00:00:00-06:00","datePublished":"2020-03-08T00:00:00-06:00","url":"https://songmarco.github.io/dev/markdown/2020/03/08/about-schema.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://songmarco.github.io/dev/markdown/2020/03/08/about-schema.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://songmarco.github.io/dev/feed.xml" title="fastpages" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/dev/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/dev/about/">About Me</a><a class="page-link" href="/dev/search/">Search</a><a class="page-link" href="/dev/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">스키마란 무엇인가</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-08T00:00:00-06:00" itemprop="datePublished">
+        Mar 8, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/dev/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>최근 백엔드 작업을 하다가, “JSON 스키마”를 처음 접했다. 스키마? 데이터의 구조로 알고 있는데… 데이터베이스에서나 쓰던 개념 아니야? JSON에 무슨 스키마가 있다는 거지? 라는 질문에서 스키마에 대해서 잘 모르는 것이 많다는 생각이 들어서, 용어에 대한 정의부터 출발해 스키마가 실제로 어떻게 쓰이고 있는지에 대하여 고민해보았다.</p>
+
+<hr />
+
+<h2 id="이론">이론</h2>
+
+<p>스키마의 사전적 정의는 다음과 같다.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Schema : (계획·이론의) 개요[윤곽]
+</code></pre></div></div>
+
+<p>흠… -_-;;
+사전적 의미가 크게 와닿지 않아서 구글에 “Schema”를 이미지로 검색해보았다.</p>
+
+<p><img src="/media/schema.png" alt="schema" /></p>
+
+<p>이미지를 보니, 복잡하고 큰 개념을 뭔가 형식으로 도식화한 느낌을 준다. 왜 이렇게 규칙을 만들어 도식화하는가? 규칙을 정해 데이터를 다룸으로써 우리가 복잡하고 큰 데이터를 컨트롤할 수 있겠다는 생각이 들었고, 형식과 규칙을 스키마의 핵심이라고 나름대로 생각을 정리했다.</p>
+
+<hr />
+
+<h2 id="실전에서-사용하는-스키마들">실전에서 사용하는 스키마들</h2>
+
+<p>이번에는 실전에서 사용하는 스키마의 용례들을 살펴보자. 사례를 찾아보니 데이터를 다루는 곳에서 스키마가 많이 사용되고 있었다. 데이터를 효율적으로 다루기 위해서는 규칙과 형식, 즉 스키마가 필요한 것이다. 찾아본 바로는 크게 database(RDBMS, noSQL), XML(XSD), JSON Schema 에서 스키마를 언급하여 소개해둔다.</p>
+
+<h3 id="1-데이터베이스에서의-기본-개념-기본-구조로써-언급되는-스키마">1. 데이터베이스에서의 기본 개념, 기본 구조로써 언급되는 스키마</h3>
+
+<ul>
+  <li>외부 스키마, 개념 스키마, 내부 스키마 등 (아래 자료 참고)</li>
+  <li><a href="https://ykcb.tistory.com/entry/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%8A%A4%ED%82%A4%EB%A7%88%EC%9D%98-%EA%B0%9C%EB%85%90-%ED%8A%B9%EC%A7%95">https://ykcb.tistory.com/entry/데이터베이스-스키마의-개념-특징</a></li>
+  <li><a href="https://www.guru99.com/dbms-schemas.html">https://www.guru99.com/dbms-schemas.html</a></li>
+</ul>
+
+<h3 id="2-rdbms의-정해진-구조로써-언급되는-스키마">2. RDBMS의 정해진 구조로써 언급되는 스키마</h3>
+
+<ul>
+  <li>noSQL이 스키마가 없어 데이터 구조가 유연하다는 말은, 다음 두 가지 의미를 내포한다.
+    <ul>
+      <li>RDBMS처럼 정해진 테이블 구조를 갖지 않는다.
+        <ul>
+          <li>RDBMS에서 property 하나를 추가하려면 Alter table 해서 모든 레코드에 컬럼을 추가해야 하지만, noSQL에서는 그럴 필요가 없다.</li>
+        </ul>
+      </li>
+      <li>각 레코드의 property가 고정돼있지 않다(예를 들면, int 컬럼을 가진 레코드인데 string을 넣으면 테이블에선 대응이 안되지만 noSQL에서는 된다는 것)</li>
+      <li>참고 자료 : <a href="https://www.mongodb.com/blog/post/why-schemaless">https://www.mongodb.com/blog/post/why-schemaless</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="3-mysql에서-db-자체로써-언급되는-스키마">3. mySQL에서 DB 자체로써 언급되는 스키마</h3>
+
+<ul>
+  <li>mySQL에서는 테이블의 집합체로써의 데이터베이스를 스키마라고 얘기한다. 그래서 데이터베이스 만드는 코드랑 스키마 만드는 코드가 같다.
+    <pre><code class="language-SQL">  mysql &gt; CREATE DATABASE `Sparta`;
+    
+  mysql &gt; CREATE SCHEMA `Greek`;
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="4-json-xml-에서-언급되는-스키마">4. JSON, XML 에서 언급되는 스키마</h3>
+
+<ul>
+  <li>JSON과 XML은 데이터를 형식화하는 방법이다. 이들과 함께 사용되는 스키마는 데이터의 구조를 알 수 있게 해주고, validation시 활용한다. (스키마에 맞지 않는 데이터를 보냈다면 오류를 발생시킨다던지)</li>
+  <li>참고 자료
+    <ul>
+      <li><a href="http://tcpschool.com/json/json_schema_schema">http://tcpschool.com/json/json_schema_schema</a></li>
+      <li><a href="http://tcpschool.com/xml/xml_xsd_intro">http://tcpschool.com/xml/xml_xsd_intro</a></li>
+      <li><a href="https://ko.wikipedia.org/wiki/XML_%EC%8A%A4%ED%82%A4%EB%A7%88_(W3C)">https://ko.wikipedia.org/wiki/XML_스키마_(W3C)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>아래 예시는 각각 JSON, XML 스키<strong>**</strong>**마를 나타낸다.</p>
+<pre><code class="language-JSON">    {
+        "title": "강아지 스키마",
+        "description": "이 스키마는 강아지에 관한 데이터를 검증하기 위해 작성된 스키마임.",
+        "type": "object",
+        "properties": {
+            "name": {"type": "string"},
+            "category": {"type": "string"},
+            "age": {"type": "integer"},
+            "weight": {"type": "number"},
+        }
+    }
+</code></pre>
+<pre><code class="language-XML">    &lt;?xml version="1.0" encoding="utf-8"?&gt;
+    &lt;xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+    	...
+          &lt;xs:sequence&gt;
+            &lt;xs:element name="Recipient" type="xs:string" /&gt;
+            &lt;xs:element name="House" type="xs:string" /&gt;
+            &lt;xs:element name="Street" type="xs:string" /&gt;
+            &lt;xs:element name="Town" type="xs:string" /&gt;
+            &lt;xs:element name="County" type="xs:string" minOccurs="0" /&gt;
+            &lt;xs:element name="PostCode" type="xs:string" /&gt;
+            &lt;xs:element name="Country" minOccurs="0"&gt;
+    
+        ...
+    &lt;/xs:schema&gt;
+</code></pre>
+<hr />
+<h3 id="정리하면">정리하면…</h3>
+
+<p><img src="/media/theory_practice.png" alt="theory_practice" /></p>
+
+<p>스키마 자체는 개요, 구조, 형식이라는 뜻을 가지고 있다. 데이터베이스에서 사용하는 스키마에 대해서만(그것도 겉할기로) 스키마를 알고 있다보니, 여러 문맥에서 사용되는 스키마를 봤을 때 헷깔렸던 것 같다. 스키마는 문맥에 따라 다른 모습으로 머릿속에 그려져야 한다. 이론과 실제가 머리에 들어오게 되어, 이제는 스키마가 뭔지 확실히 얘기할 수 있다는 확신이 생겼다.</p>
+
+  </div><a class="u-url" href="/dev/markdown/2020/03/08/about-schema.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/dev/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/dev/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/dev/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/dev/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/dev/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
