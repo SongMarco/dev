@@ -1,13 +1,7 @@
 ---
 layout: page
-title: About Me
+title: 안녕하세요! 개발자 마르코입니다.
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
-
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
-
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+서울에서 2년차 웹 백엔드 엔지니어로 일하고 있으며 항상 더 나은 생산성과 커뮤니케이션을 고민합니다. 개발자의 가치는 기술로 세상을 이롭게 하는데서 나온다고 믿습니다. 문제 해결을 즐기고 주도적으로 일하는 것을 좋아합니다. 편하게 소통해요 :) snubflow@gmail.com
