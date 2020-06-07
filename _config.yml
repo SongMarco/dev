@@ -6,8 +6,8 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+title: 마르코의 블로그
+description: 개발자 마르코입니다. 
 github_username: SongMarco
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "dev"
@@ -39,6 +39,7 @@ baseurl: "/dev" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
+    facebook : https://www.facebook.com/profile.php?id=100003043246766
     twitter: fastdotai
     github: fastai
 
