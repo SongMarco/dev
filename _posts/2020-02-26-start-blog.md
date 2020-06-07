@@ -2,7 +2,7 @@
 toc: false
 layout: post
 description: 개발 블로그 출사표
-categories: [markdown]
+categories: [insight]
 title: 글또와 개발 블로그를 시작하며
 ---
 
