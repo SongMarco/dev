@@ -2,7 +2,7 @@
 title: ELB 로드밸런서 관련 오류를 해결하면서...
 toc: false
 layout: post
-description: 개발 블로그 출사표
+description: 백엔드 업무 중 발생한 로드밸런서 관련 에러 대응에 대한 기록
 categories: [markdown]
 ---
 

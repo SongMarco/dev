@@ -1,18 +1,11 @@
 ---
 title: DB 데이터를 변경할 때 사용하는 보험들 (UPDATE, DELETE)
-date: "2020-03-22T10:00:00.169Z"
-template: "post"
-draft: false
-slug: "about-change-data"
-category: "backend"
-tags:
-  - "think"
-  - "backend"
-  # - "load balancing"
-# description: "스키마가 무엇인지 고민해보"
-socialImage: "/media/fail-db.jpg"
+toc: false
+layout: post
+description: DB에 담긴 로우 데이터를 변경할 때 안전하게 조치하는 방법을 서술한다.
+categories: [markdown]
 ---
-![schema](/media/fail-db.jpg)
+![schema](media/fail-db.jpg)
 
 ---
 
