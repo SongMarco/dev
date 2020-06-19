@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Title | 마르코의 블로그</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="개발자 마르코입니다." />
+<meta property="og:description" content="개발자 마르코입니다." />
+<link rel="canonical" href="https://songmarco.github.io/dev/2020/06/19/about-online-schema-change.html" />
+<meta property="og:url" content="https://songmarco.github.io/dev/2020/06/19/about-online-schema-change.html" />
+<meta property="og:site_name" content="마르코의 블로그" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-19T00:00:00-05:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://songmarco.github.io/dev/2020/06/19/about-online-schema-change.html"},"description":"개발자 마르코입니다.","@type":"BlogPosting","url":"https://songmarco.github.io/dev/2020/06/19/about-online-schema-change.html","headline":"Title","dateModified":"2020-06-19T00:00:00-05:00","datePublished":"2020-06-19T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/dev/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://songmarco.github.io/dev/feed.xml" title="마르코의 블로그" /><link rel="shortcut icon" type="image/x-icon" href="/dev/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Title | 마르코의 블로그</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="개발자 마르코입니다." />
+<meta property="og:description" content="개발자 마르코입니다." />
+<link rel="canonical" href="https://songmarco.github.io/dev/2020/06/19/about-online-schema-change.html" />
+<meta property="og:url" content="https://songmarco.github.io/dev/2020/06/19/about-online-schema-change.html" />
+<meta property="og:site_name" content="마르코의 블로그" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-19T00:00:00-05:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://songmarco.github.io/dev/2020/06/19/about-online-schema-change.html"},"description":"개발자 마르코입니다.","@type":"BlogPosting","url":"https://songmarco.github.io/dev/2020/06/19/about-online-schema-change.html","headline":"Title","dateModified":"2020-06-19T00:00:00-05:00","datePublished":"2020-06-19T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://songmarco.github.io/dev/feed.xml" title="마르코의 블로그" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/dev/">마르코의 블로그</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/dev/about/">About</a><a class="page-link" href="/dev/categories/">Categories</a><a class="page-link" href="/dev/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-06-19T00:00:00-05:00" itemprop="datePublished">
+        Jun 19, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/SongMarco/dev/tree/master/_notebooks/2020-06-19-about-online-schema-change.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/dev/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/SongMarco/dev/master?filepath=_notebooks%2F2020-06-19-about-online-schema-change.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/dev/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/SongMarco/dev/blob/master/_notebooks/2020-06-19-about-online-schema-change.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/dev/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-06-19-about-online-schema-change.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="OSC(online-schema-change)&#44032;-&#47952;&#51424;?">OSC(online schema change)&#44032; &#47952;&#51424;?<a class="anchor-link" href="#OSC(online-schema-change)&#44032;-&#47952;&#51424;?"> </a></h2><p>서비스 중인 프로덕션 환경의 테이블 스키마를 수정할 때는, 스키마를 수정하는 도중에도 데이터를 READ / WRITE 할 수 있어야 한다. 이렇게  무중단으로 스키마를 수정하는 방법을 Online-Schema-Change, OSC라 한다.</p>
+<h2 id="OSC&#47484;-&#49324;&#50857;&#54616;&#44172;-&#46108;-&#48176;&#44221;...">OSC&#47484; &#49324;&#50857;&#54616;&#44172; &#46108; &#48176;&#44221;...<a class="anchor-link" href="#OSC&#47484;-&#49324;&#50857;&#54616;&#44172;-&#46108;-&#48176;&#44221;..."> </a></h2><p>alter table로 프로덕션 DB를 수정하다가, table lock으로 인해 일부 테이블 사용이 불가능해진 사고가 발생했다. 문제가 생긴 테이블들은 drop, create 모두 불가능한 교착 상태가 지속되었고 해결에 상당한 시간이 소요되었다. 스키마 변경에 따른 DB 문제 재발 방지를 위해 OSC를 도입하였다.</p>
+<h2 id="&#44060;&#45392;-&#49444;&#47749;">&#44060;&#45392; &#49444;&#47749;<a class="anchor-link" href="#&#44060;&#45392;-&#49444;&#47749;"> </a></h2><p>기존 <code>alter table</code> 방식</p>
+<ol>
+<li>해당 테이블을 락으로 새로운 <code>READ</code> or <code>WRITE</code> 차단 ( READ / WRITE lock 여부는 DB 엔진, DB 버전, 쿼리문마다 얘기가 다르므로 주의) - <a href="[https://dev.mysql.com/doc/refman/5.6/en/innodb-online-ddl-operations.html](https://dev.mysql.com/doc/refman/5.6/en/innodb-online-ddl-operations.html">mysql5.6</a>)</li>
+<li>새로운 테이블의 빈 임시 테이블을 만들고, (스키마 변경이 반영된)</li>
+<li>기존 테이블에서 새 테이블에 데이터를 복사하고,</li>
+<li>새 테이블을 기존 테이블과 같은 이름으로 바꾸고 기존 테이블을 삭제한다.</li>
+<li>새로운 테이블에 차단했던 <code>Lock</code>을 푼다. </li>
+</ol>
+<p>문제점 : 락 문제때문에 프로덕션에선 사용하기 곤란하다. 락이 걸린 동안 발생하는 READ / WRITE가 불가능해지고, 데드락으로 인한 DB 교착이 생길 수 있다.</p>
+<p>그래서 어떻게? 락 걸지마! - <code>OSC</code> 의 해결 방법</p>
+<ul>
+<li><code>alter</code> 프로세스를 스크립트화하여, 사용자(DBA)가 컨트롤할 수 있게 하였다. 새 테이블을 생성해서 복붙 후 기존 테이블 삭제하는 로직은 동일하다.</li>
+<li><code>Lock</code>을 거는 대신 <code>Trigger</code>, <code>binary log stream</code>  등을 이용하여, 새 테이블로 데이터 이동 중에도 계속해서 새로운 READ/WRITE 가능토록 했다. 서비스가 지속가능하다.</li>
+<li>무중단으로 스키마가 변경되었다. Profit!!!</li>
+</ul>
+<h2 id="OSC-&#49324;&#50857;-&#48169;&#48277;">OSC &#49324;&#50857; &#48169;&#48277;<a class="anchor-link" href="#OSC-&#49324;&#50857;-&#48169;&#48277;"> </a></h2><p>하여 OSC의 대표적인 툴인 percona에서 만든, pt-online-schema-change를 소개한다.</p>
+<p>각자 환경에 맞는 방법으로 percona-toolkit을 설치한다. (글에서는 mac homebrew로 설치)</p>
+<div class="highlight"><pre><span></span>brew install percona-toolkit
+</pre></div>
+<p>pt-online-schema-change 스크립트를 환경에 맞게 옵션을 설정하여 셸에서 실행하면 스키마 변경이 진행된다. 다음과 같은 상황에서 사용한다.</p>
+<ul>
+<li>테이블 컬럼 추가, 변경</li>
+<li>각종 key 설정(constraint, pk 등)</li>
+</ul>
+<p>테스트용 셸 스크립트</p>
+<div class="highlight"><pre><span></span>pt-online-schema-change <span class="se">\</span>
+--alter <span class="s2">&quot;add column testcol varchar(255) default null&quot;</span> <span class="nv">D</span><span class="o">=</span>PetRegistration,t<span class="o">=</span>test_A <span class="se">\</span>
+--chunk-size<span class="o">=</span><span class="m">200</span> <span class="se">\</span>
+--host<span class="o">=</span>petregistrantion-test.crt3wdpmhtxz.ap-northeast-2.rds.amazonaws.com <span class="se">\</span>
+--port<span class="o">=</span><span class="m">3306</span> <span class="se">\</span>
+--user<span class="o">=</span>peopet <span class="se">\</span>
+--password<span class="o">=</span><span class="s2">&quot;impactor123#&quot;</span> <span class="se">\</span>
+--progress<span class="o">=</span>time,30 <span class="se">\</span>
+--charset<span class="o">=</span>UTF8 <span class="se">\</span>
+--execute
+</pre></div>
+<p>라이브용 셸 스크립트</p>
+<ul>
+<li>참고자료</li>
+<li><a href="https://jojoldu.tistory.com/358">https://jojoldu.tistory.com/358</a></li>
+<li><a href="https://gywn.net/2017/08/small-talk-pt-osc/">https://gywn.net/2017/08/small-talk-pt-osc/</a></li>
+<li><a href="https://blog.myungseokang.dev/posts/online-schema-change/">https://blog.myungseokang.dev/posts/online-schema-change/</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/dev/2020/06/19/about-online-schema-change.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/dev/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/dev/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/dev/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>개발자 마르코입니다.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://www.facebook.com/https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100003043246766" title="https://www.facebook.com/profile.php?id=100003043246766"><svg class="svg-icon grey"><use xlink:href="/dev/assets/minima-social-icons.svg#facebook"></use></svg></a></li><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/dev/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/dev/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
